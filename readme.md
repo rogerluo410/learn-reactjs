@@ -3,7 +3,20 @@
 step1:
 * Setup React project
 
-  npx create-react-app my-app
+  - Creating a single-page app
+    
+    npx create-react-app my-app  
+
+  - Server-rendered website with Node.js
+
+    Next.js
+
+  - Include React and ReactDOM in JS
+
+    ```
+      <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    ```
 
 * JSX  
 
