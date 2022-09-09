@@ -23,11 +23,11 @@ step1:
 
   -  Work like real DOM, enable attributes and events
 
-    1) 
+    1).   
 
   -  Prevents XSS Injection Attacks  
 
-    1) Everything is converted to a string before being rendered
+    1). Everything is converted to a string before being rendered
 
   -  Actual work
     ```
@@ -62,7 +62,7 @@ step1:
 
   - Only update what’s necessary  
 
-    1) More efficient than manipulate on real DOM  
+    1). More efficient than manipulate on real DOM  
 
 
   - Virtual DOM tree
@@ -71,7 +71,7 @@ step1:
 
   - Write pure funciton    
 
-    1) React.Component instance  
+    1). React.Component instance  
 
     ```  
       class Welcome extends React.Component {
@@ -97,7 +97,7 @@ step1:
 
     ```
 
-    2) Pure funciton instance  
+    2). Pure funciton instance  
 
     ```
 
@@ -159,7 +159,7 @@ step2:
   
   - Lighter than React.Component  
 
-    1) Without writing a class, avoid lifecycle callbacks like componentDidMount...  
+    1). Without writing a class, avoid lifecycle callbacks like componentDidMount...  
 
   - Call Hooks at the Top Level  
 
