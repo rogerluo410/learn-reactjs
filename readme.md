@@ -7,34 +7,47 @@ step1:
 
 * JSX  
 
-  -  Work like real DOM, attributes and events  
-  -  JSX Prevents Injection Attacks
+  -  Work like real DOM, enable attributes and events  
+  -  Prevents Injection Attacks
 
-  ```
-    const element = (
-      <h1 className="greeting">
-        Hello, world!
-      </h1>
-    );
+  -  Actual work
+    ```
+      const element = (
+        <h1 className="greeting">
+          Hello, world!
+        </h1>
+      );
 
-    equels: 
+      equels: 
 
-    const element = React.createElement(
-      'h1',
-      {className: 'greeting'},
-      'Hello, world!'
-    );
-  ```
+      const element = React.createElement(
+        'h1',
+        {className: 'greeting'},
+        'Hello, world!'
+      );
+    ```
 
 * Rendering Elements   
 
-  - Only update what’s Necessary
+  - Actual work  
+    
+    ```
+      const root = ReactDOM.createRoot(
+        document.getElementById('root')
+      );
+      
+      const element = <h1>Hello, world</h1>;
+      
+      root.render(element);
+    ```
+
+  - Only update what’s necessary
 
 * Components and Props  
 
   - Pure funciton  
 
-  
+
 * State and Lifecycle  
 * Handling Events
 
