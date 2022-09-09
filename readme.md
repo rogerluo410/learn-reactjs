@@ -23,11 +23,11 @@ step1:
 
   -  Work like real DOM, enable attributes and events
 
-    1).   
+      1).   
 
   -  Prevents XSS Injection Attacks  
 
-    1). Everything is converted to a string before being rendered
+      1). Everything is converted to a string before being rendered
 
   -  Actual work
     ```
@@ -62,7 +62,7 @@ step1:
 
   - Only update what’s necessary  
 
-    1). More efficient than manipulate on real DOM  
+      1). More efficient than manipulate on real DOM  
 
 
   - Virtual DOM tree
@@ -71,51 +71,51 @@ step1:
 
   - Write pure funciton    
 
-    1). React.Component instance  
+      1). React.Component instance  
 
-    ```  
-      class Welcome extends React.Component {
-        // Basic doing things in constructor 
-        constructor(props) { 
-          super(props);
-          this.state = { counter: 0 };
-          this.handleClick = this.handleClick.bind(this);
+      ```  
+        class Welcome extends React.Component {
+          // Basic doing things in constructor 
+          constructor(props) { 
+            super(props);
+            this.state = { counter: 0 };
+            this.handleClick = this.handleClick.bind(this);
+          }
+
+          // Component mounting callback  
+          componentDidMount() { ... }
+
+          // Component updating callback  
+          shouldComponentUpdate() 
+          componentDidUpdate()
+
+          // render method to return JSX
+          render() {
+            return <h1>Hello, {this.props.name}</h1>;
+          }
         }
 
-        // Component mounting callback  
-        componentDidMount() { ... }
+      ```
 
-        // Component updating callback  
-        shouldComponentUpdate() 
-        componentDidUpdate()
+      2). Pure funciton instance  
 
-        // render method to return JSX
-        render() {
-          return <h1>Hello, {this.props.name}</h1>;
+      ```
+
+        function Jsx(props) {
+          const user = {
+            firstName: "Harper",
+            lastName: "Perez",
+          };
+
+          const formatName = (user) => {
+            return user.firstName + " " + user.lastName;
+          };
+
+          const Element = <h1>Hello, {formatName(user)}!</h1>;
+
+          return <div className="jsx">{Element}</div>;
         }
-      }
-
-    ```
-
-    2). Pure funciton instance  
-
-    ```
-
-      function Jsx(props) {
-        const user = {
-          firstName: "Harper",
-          lastName: "Perez",
-        };
-
-        const formatName = (user) => {
-          return user.firstName + " " + user.lastName;
-        };
-
-        const Element = <h1>Hello, {formatName(user)}!</h1>;
-
-        return <div className="jsx">{Element}</div>;
-      }
-    ```
+      ```
 
   - Nested child components  
 
@@ -159,7 +159,7 @@ step2:
   
   - Lighter than React.Component  
 
-    1). Without writing a class, avoid lifecycle callbacks like componentDidMount...  
+      1). Without writing a class, avoid lifecycle callbacks like componentDidMount...  
 
   - Call Hooks at the Top Level  
 
