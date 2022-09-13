@@ -159,7 +159,21 @@ step1:
 
 step2: 
 * useState   
+
+  ```
+    const [count, setCount] = useState(0);
+  ```
+
 * useEffect  
+
+  ```
+
+    useEffect(() => {
+      
+    }, []);
+
+  ```
+
 * Rule of Hooks  
   
   - Lighter than React.Component  
