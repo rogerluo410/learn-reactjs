@@ -67,7 +67,7 @@ step1:
 
   - Virtual DOM tree
 
-      ![](/images/dom-tree.jpg)
+      ![image](https://user-images.githubusercontent.com/5260711/189859617-567d04dc-5813-4823-816d-cfd19e82378d.png)
 
 * Components and Props  
 
