@@ -67,7 +67,7 @@ step1:
 
   - Virtual DOM tree
 
-      ![image info](./images/dom-tree.jpg)
+      ![image](./images/dom-tree.jpg)
 
 * Components and Props  
 
