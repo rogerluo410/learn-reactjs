@@ -67,6 +67,8 @@ step1:
 
   - Virtual DOM tree
 
+      ![image info](./images/dom-tree.jpg)
+
 * Components and Props  
 
   - Write pure funciton    
@@ -151,6 +153,9 @@ step1:
    ```
 
 * Forms
+
+    - https://github.com/jaredpalmer/formik  
+    - https://github.com/react-hook-form/react-hook-form  
 
 step2: 
 * useState   
